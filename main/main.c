@@ -25,17 +25,18 @@
 #define HEARTBEAT_LED   2 // on-board Heartbeat LED is at pin 2 (general purpose input/output)
 #define LED_ON          1
 #define LED_OFF         0
+int CURRENT_LED = LED_ON;
+
+static EventGroupHandle_t s_wifi_event_group;
+
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
-int CURRENT_LED = LED_ON;
 
 // gpio_reset_pin(gpio_num_t io_pin);
 // gpio_set_direction(gpio_num_t io_pin, gpio_mode_t mode); mode = GPIO_MODE_OUTPUT
 // gpio_set_level(gpio_num_t io_pin, uint32_t level);
 
 // vTaskDelay(1000 / portTICK_PERIOD_MS); // delay 1 second
-
-static EventGroupHandle_t s_wifi_event_group;
 
 static const char *TAG = "wifi station";
 
@@ -136,14 +137,13 @@ void wifi_init_sta(void)
 }
 
 static void periodic_timer_callback(void* arg);
-// static void oneshot_timer_callback(void* arg);
 
-static const char* TAG = "example";
+static const char* TAG_2 = "example";
 
 static void periodic_timer_callback(void* arg)
 {
     int64_t time_since_boot = esp_timer_get_time();
-    ESP_LOGI(TAG, "Periodic timer called, time since boot: %lld us", time_since_boot);
+    ESP_LOGI(TAG_2, "Periodic timer called, time since boot: %lld us", time_since_boot);
 
     if(CURRENT_LED == LED_OFF)
     {
