@@ -9,5 +9,8 @@
     ],
     "idf.portWin": "COM3",
     "idf.pythonBinPathWin": "C:\\Users\\User\\.espressif\\python_env\\idf4.3_py3.8_env\\Scripts\\python.exe",
-    "idf.toolsPathWin": "C:\\Users\\User\\.espressif"
+    "idf.toolsPathWin": "C:\\Users\\User\\.espressif",
+    "files.associations": {
+        "*.inc": "c"
+    }
 }

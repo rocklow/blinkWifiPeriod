@@ -14,6 +14,7 @@
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "nvs_flash.h"
+
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
@@ -161,11 +162,6 @@ void app_main(void)
     gpio_reset_pin(HEARTBEAT_LED);
     gpio_set_direction(HEARTBEAT_LED, GPIO_MODE_OUTPUT);
     
-    EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
-        WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
-        pdFALSE,
-        pdFALSE,
-        portMAX_DELAY);
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
       ESP_ERROR_CHECK(nvs_flash_erase());
