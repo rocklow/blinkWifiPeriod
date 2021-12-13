@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/CMakeFiles/bootloader
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/CMakeFiles/bootloader.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/CMakeFiles/bootloader-complete.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/visual_studio_pro/blinkWifiPeriod/project-name/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
