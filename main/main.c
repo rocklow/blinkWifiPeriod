@@ -5,6 +5,8 @@
 #include "esp_log.h"
 #include "esp_sleep.h"
 #include "sdkconfig.h"
+#include "esp_system.h"
+#include "freertos/event_groups.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
